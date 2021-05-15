@@ -28,6 +28,13 @@
         </router-link>
       </v-toolbar-title>
       <v-spacer />
+      <v-switch
+        v-model="$vuetify.theme.dark"
+        class="ml-4 pt-6"
+        color="orange"
+      ></v-switch>
+      <v-icon>mdi-theme-light-dark</v-icon>
+      <v-spacer />
       <v-tabs v-if="!mobile" color="white">
         <v-spacer></v-spacer>
         <v-tabs-slider color="white"></v-tabs-slider>
